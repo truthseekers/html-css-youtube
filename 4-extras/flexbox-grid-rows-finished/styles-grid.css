@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+}
+
+.item-1 {
+  background-color: yellow;
+}
+
+.item-2 {
+  background-color: orange;
+}
+
+.item-3 {
+  background-color: yellowgreen;
+}
+
+.item-4 {
+  background-color: pink;
+}
+
+.item-5 {
+  background-color: cyan;
+}
+
+/* Grid method of using rows */
+
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 100px 150px;
+  row-gap: 20px;
+  column-gap: 35px;
+  /* grid-template-columns: 90px 50px 120px; */
+  /* grid-template-columns: 3rem 25% 1fr 2fr; */
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a {
+  background-color: aqua;
+}
+
+.b {
+  background-color: greenyellow;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.c {
+  background-color: orange;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.d {
+  background-color: red;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.e {
+  background-color: hotpink;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.f {
+  background-color: purple;
+}

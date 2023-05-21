@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Grid 1: Simple Grid</h1>
+      <p>
+        By default the grid has one column. Every item in the grid will take up
+        the entire row
+      </p>
+      <div class="grid container">
+        <div class="one">item 1</div>
+        <div class="two">item 2</div>
+        <div class="three">item 3</div>
+        <div class="four">item 4</div>
+        <div class="five">item 5</div>
+        <div class="six">item 6</div>
+      </div>
+
+      <h1>Grid 2:</h1>
+      <h3>Specifying row heights and # of rows, width of cols & # of cols</h3>
+      <p>
+        In grid2 we set specified the heights of the first two rows the be 100px
+        and 150px. We also set three columns with "fractional" units. We see two
+        1 part items, and a 2 part item. This means the 2 part column takes up
+        twice as much space as the 1 part column.
+      </p>
+      <p>
+        We have two rows and 3 columns, meaning 3 columns per row, which is all
+        six of our items in the grid. AFTER the grid has used up all it's
+        defined areas, it will start adding them at the bottom. So new items
+        will be added to the next row with the same amount of columns as above.
+      </p>
+      <div class="grid2 container">
+        <div class="one">item 1</div>
+        <div class="two">item 2</div>
+        <div class="three">item 3</div>
+        <div class="four">item 4</div>
+        <div class="five">item 5</div>
+        <div class="six">item 6</div>
+        <div class="seven">item 7</div>
+        <div class="eight">item 8</div>
+      </div>
+
+      <h1>Grid 3: Repeat</h1>
+
+      <p>
+        repeating. in this example, 3 rows in a row are set to a height of
+        200px, and two columns in a row are 30% width. There's only two columns,
+        and the rows after the first three take up the space of the content in
+        the item.
+      </p>
+      <div class="grid3 container">
+        <div class="one">item 1</div>
+        <div class="two">item 2</div>
+        <div class="three">item 3</div>
+        <div class="four">item 4</div>
+        <div class="five">item 5</div>
+        <div class="six">item 6</div>
+        <div class="seven">item 7</div>
+        <div class="eight">item 8</div>
+      </div>
+
+      <h1>Grid 4</h1>
+      <h3>Row and column gaps</h3>
+      <div class="grid4 container">
+        <div class="one">item 1</div>
+        <div class="two">item 2</div>
+        <div class="three">item 3</div>
+        <div class="four">item 4</div>
+        <div class="five">item 5</div>
+        <div class="six">item 6</div>
+        <div class="seven">item 7</div>
+        <div class="eight">item 8</div>
+      </div>
+    </div>
+  </body>
+</html>

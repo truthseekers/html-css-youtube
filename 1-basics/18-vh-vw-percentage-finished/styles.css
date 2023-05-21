@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.div1 {
+  background-color: chocolate;
+  height: 100vh;
+}
+
+.div2 {
+  background-color: greenyellow;
+  height: 80vh;
+  width: 80vw;
+}
+
+.div3 {
+  background-color: hotpink;
+  height: 35%;
+  width: 50%;
+}
+
+.div4 {
+  background-color: orangered;
+  height: 80vh;
+  width: 80vw;
+}
+
+.div5 {
+  background-color: yellow;
+  width: 50%;
+  height: 35%;
+}
+
+.div6 {
+  background-color: deeppink;
+  width: 100vw;
+  height: 35%;
+}

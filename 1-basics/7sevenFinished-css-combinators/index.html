@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <p>Outside p tag</p>
+    <div class="one">
+      <p>div one p</p>
+      <p>div one p</p>
+      <p>div one p</p>
+      <p>div one p</p>
+    </div>
+    <p>Outside p tag</p>
+
+    <div class="two">
+      <p>div two p</p>
+      <p>div two p</p>
+      <p>div two p</p>
+      <p>div two p</p>
+    </div>
+    <p>Outside p tag</p>
+
+    <div class="three">
+      <p class="classA">div three p</p>
+      <p class="classA classB">div three p</p>
+      <p class="classB">div three p</p>
+      <p>div three p</p>
+      <p>div three p</p>
+      <span class="classA classB">Class three span</span>
+    </div>
+
+    <p>Outside p tag</p>
+
+    <!-- Child Combinators -->
+
+    <div class="four">
+      <p>direct child of four</p>
+      <p>direct child of four</p>
+      <div class="innerfour">
+        <p>second level child of four</p>
+        <p>second level child of four</p>
+
+        <div class="thirdlevelfour">
+          <p>third level child of four</p>
+          <p>third level child of four</p>
+        </div>
+      </div>
+      <p>direct child of four</p>
+    </div>
+
+    <div class="five">
+      <span>Just a regular span</span>
+      <span>Just a regular span</span>
+      <p class="step">P before the span</p>
+      <span>Span after a P</span>
+      <p>P before the span</p>
+      <span>Span after a P</span>
+      <span>Just a regular span</span>
+      <span>Just a regular span</span>
+      <span>Just a regular span</span>
+      <span>Just a regular span</span>
+    </div>
+
+    <div class="six">
+      <h2>direct child of six h2</h2>
+      <p>direct child of six</p>
+      <p>direct child of six</p>
+      <div class="innersix">
+        <p>second level child of six</p>
+        <p>second level child of six</p>
+
+        <div class="thirdlevelsix">
+          <p>third level child of six</p>
+          <h2>h2 in third level</h2>
+          <p>third level child of six</p>
+        </div>
+
+        <p>second level child of six</p>
+        <p>second level child of six</p>
+      </div>
+      <p>direct child of six</p>
+    </div>
+  </body>
+</html>

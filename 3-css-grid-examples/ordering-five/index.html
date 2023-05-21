@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Takeaway: Be careful with ordering and be specific if you can</h1>
+      <h1>Grid 1: Whitespace</h1>
+      <p>
+        Notice that item d can fit in row 2 col 1, OR row 1 col 3, but it gets
+        displayed after item c. I am PRETTY SURE it's because by default, if
+        they can, elements will wait until after the element before them in the
+        dom shows up. "d" is after "c", and "d" isn't told where to go, so it
+        will leave white space present, and show up after "c".
+      </p>
+      <div class="grid container">
+        <div class="a">item a</div>
+        <div class="b">item b</div>
+        <div class="c">item c</div>
+        <div class="d">item d</div>
+        <div class="e">item e</div>
+        <div class="f">item f</div>
+      </div>
+
+      <h1>Grid 2: Moving things backwards in the grid</h1>
+      <p>
+        item a was able to move behind everything and all the other elements
+        moved in front of it.
+      </p>
+      <p>
+        <strong
+          >The new theory is that elements can be told to move BEHIND elements
+          that come after, but otherwise elements will wait their turn to show,
+          leaving white space</strong
+        >
+        So item "c", and item "d" are able to go in front of item "a" because
+        item "a" was explicitly placed "backwards" in the dom.. behind other
+        elements that it should have gone in front of.
+      </p>
+      <p>
+        But item F is only told to span two columns, it's not explicitly placed
+        behind g and h, so g and h have to show up after f.
+      </p>
+      <div class="grid2 container">
+        <div class="a2">item a</div>
+        <div class="b2">item b</div>
+        <div class="c2">item c</div>
+        <div class="d2">item d</div>
+        <div class="e2">item e</div>
+        <div class="f2">item f</div>
+        <div class="g2">item g</div>
+        <div class="h2">item h</div>
+      </div>
+
+      <h1>Grid 3</h1>
+      <p>Just guessing with how this is working. But:</p>
+      <p>
+        b is specifically told to start on row 1. It WOULD go after "item a" if
+        it could, but "item c" prevents that from happening because "item c" is
+        told to be at row 2, column 2, which is where "item b" would extend
+        into. So.. grid item positioning has some kind of specificity rules,
+        where overlapping is last resort.
+      </p>
+      <div class="grid3 container">
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+      </div>
+
+      <h1>Grid 4</h1>
+      <p>Just guessing with how this is working. But:</p>
+      <p>
+        Telling a grid row to start and end at a specific spot must be
+        "stronger" in the specificity ruleset than giving a less specific
+        instruction of "span two rows" because in this scenario, "item b" does
+        essentially the same thing, but finds its resting spot on the 3rd column
+        of row 1. I don't see why the previous example couldn't have done this
+        too.
+      </p>
+      <div class="grid4 container">
+        <div class="a4">item a</div>
+        <div class="b4">item b</div>
+        <div class="c4">item c</div>
+        <div class="d4">item d</div>
+        <div class="e4">item e</div>
+        <div class="f4">item f</div>
+        <div class="g4">item g</div>
+        <div class="h4">item h</div>
+      </div>
+
+      <h1>Grid 5</h1>
+      <p>Just guessing with how this is working. But:</p>
+      <p>
+        item "a" goes first, it's top of the dom AND given a specific
+        instruction to be in the first row. item "b" is also told to go on the
+        first row, and end at row line 3, and cannot do that without overlapping
+        c, so moves to column 3. item "c" is specifically located behind where
+        "item d" would go at this point, so "item d" is allowed to move forward
+        and fill the whitespace.
+      </p>
+
+      <div class="grid5 container">
+        <div class="a5">item a</div>
+        <div class="b5">item b</div>
+        <div class="c5">item c</div>
+        <div class="d5">item d</div>
+        <div class="e5">item e</div>
+        <div class="f5">item f</div>
+        <div class="g5">item g</div>
+        <div class="h5">item h</div>
+      </div>
+    </div>
+  </body>
+</html>

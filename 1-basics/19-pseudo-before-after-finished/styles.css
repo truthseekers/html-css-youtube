@@ -1,0 +1,29 @@
+/* If there's a way to make images work, I can't figure it out. SVGs are much easier to use in these scenarios. */
+/* content: url("./popup-link-icon.png"); */
+a::after {
+  content: url("./popup-link-icon.svg");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li::before {
+  content: url("./swirl-arrow-right-icon.svg");
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+  display: inline-block;
+  background-color: yellowgreen;
+  border-radius: 10px;
+}
+
+li::after {
+  content: "after the li";
+  padding-left: 10px;
+  font-size: 28px;
+}

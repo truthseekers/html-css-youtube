@@ -1,0 +1,142 @@
+/* FIRST GRID */
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 75px 120px;
+  grid-template-columns: 35% 35%;
+  grid-auto-rows: 250px;
+  row-gap: 5px;
+}
+
+.a {
+  background-color: aqua;
+}
+
+.b {
+  background-color: greenyellow;
+}
+
+.c {
+  background-color: orange;
+}
+
+.d {
+  background-color: red;
+}
+
+.e {
+  background-color: hotpink;
+}
+.f {
+  background-color: purple;
+}
+.g {
+  background-color: brown;
+}
+.h {
+  background-color: gray;
+}
+
+/* SECOND GRID */
+/* Normal grid. First row is 175px the rest take up only the space needed. */
+/* .grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 175px;
+  row-gap: 5px;
+} */
+
+/* This changes the flow to "column", meaning the grid flows in the column direction.
+  because of this, we'll end up with one row, meaning all the items next to it will also be 175px tall.
+*/
+/* .grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 175px;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-auto-flow: column;
+} */
+
+/* This adds a second row with a height of 50px. So now the grid fills up each row and then implicitly adds more columns.
+  We end up with two rows, and as many columns as needed. first row 175px and the 2nd is 50px.
+*/
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 175px 50px;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-auto-flow: column;
+}
+
+.a2 {
+  background-color: aqua;
+}
+
+.b2 {
+  background-color: greenyellow;
+}
+
+.c2 {
+  background-color: orange;
+}
+
+.d2 {
+  background-color: red;
+}
+
+.e2 {
+  background-color: hotpink;
+}
+.f2 {
+  background-color: purple;
+}
+.g2 {
+  background-color: brown;
+}
+.h2 {
+  background-color: gray;
+}
+
+/* Having too many elements will cause the page to stretch horizontally, rather than adding new rows */
+.grid3 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 175px 50px;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr 1fr; /* We've only defined the sizes of the first 3 columns. */
+  /* We can have the implicit columns be a specific width also. uncomment below */
+  /* grid-auto-columns: 75px; */
+}
+
+.a3 {
+  background-color: aqua;
+}
+
+.b3 {
+  background-color: greenyellow;
+}
+
+.c3 {
+  background-color: orange;
+}
+
+.d3 {
+  background-color: red;
+}
+
+.e3 {
+  background-color: hotpink;
+}
+.f3 {
+  background-color: purple;
+}
+.g3 {
+  background-color: brown;
+}
+.h3 {
+  background-color: gray;
+}

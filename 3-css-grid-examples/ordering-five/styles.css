@@ -1,0 +1,255 @@
+/* FIRST GRID */
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a {
+  background-color: aqua;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.b {
+  background-color: greenyellow;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.c {
+  background-color: orange;
+  grid-column: 2 / span 3;
+}
+
+.d {
+  background-color: red;
+  /* d will go AFTER c, unless it's told to go in a specific location. set grid-row-start: 2 to make it show before item "c" */
+  /* grid-row-start: 2; */
+}
+
+.e {
+  background-color: hotpink;
+}
+.f {
+  background-color: purple;
+}
+.g {
+  background-color: brown;
+}
+.h {
+  background-color: gray;
+}
+
+/* SECOND GRID */
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a2 {
+  background-color: aqua;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 5;
+}
+
+.b2 {
+  background-color: greenyellow;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.c2 {
+  background-color: orange;
+  /* Making item c span 3 columns will cause whitespace because item "c" can't fit after item b. It's forced to go to a new row, but the items after item c aren't given a specific location, so whitespace occurs.  */
+  /* grid-column: span 3; */
+}
+
+.d2 {
+  background-color: red;
+}
+
+.e2 {
+  background-color: hotpink;
+}
+/* I believe "item f" actually shows up AFTER item "h" even though it looks like it comes before. Because each cell in the row has to fill up before moving to the next column, f actually is first. */
+.f2 {
+  background-color: purple;
+  grid-column: span 2;
+  grid-row: span 2;
+  grid-column: 2 / span 2;
+  /* Moving f to start at the third column still has "g" showing up after "f" and leaving whitespace. */
+  /* grid-column: 3 / span 2; */
+}
+.g2 {
+  background-color: brown;
+}
+.h2 {
+  background-color: gray;
+}
+
+/* THIRD GRID */
+
+/* .grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  row-gap: 5px;
+  column-gap: 5px;
+} */
+
+.grid3 {
+  background-color: lightgray;
+  display: grid;
+  /* order below: b, a, d, c, e, f, g, h */
+  grid-template-columns: 250px 150px 75px;
+  /* order below: b, a, d, e, c, f, g, h */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
+  grid-template-rows: 150px 150px 150px 150px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a3 {
+  background-color: aqua;
+  /* grid-row-start: 1;
+  grid-row-end: 2; */
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+}
+
+.b3 {
+  background-color: greenyellow;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.c3 {
+  background-color: orange;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.d3 {
+  background-color: red;
+}
+
+.e3 {
+  background-color: hotpink;
+}
+.f3 {
+  background-color: purple;
+}
+.g3 {
+  background-color: brown;
+}
+.h3 {
+  background-color: gray;
+}
+
+/* Grid 4 */
+
+.grid4 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 250px 150px 75px;
+  grid-template-rows: 150px 150px 150px 150px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a4 {
+  background-color: aqua;
+}
+
+.b4 {
+  background-color: greenyellow;
+  grid-row: span 2;
+}
+
+.c4 {
+  background-color: orange;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.d4 {
+  background-color: red;
+}
+
+.e4 {
+  background-color: hotpink;
+}
+.f4 {
+  background-color: purple;
+}
+.g4 {
+  background-color: brown;
+}
+.h4 {
+  background-color: gray;
+}
+
+/* fIFTH GRID */
+
+.grid5 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 250px 150px 75px;
+  grid-template-rows: 150px 150px 150px 150px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a5 {
+  background-color: aqua;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.b5 {
+  background-color: greenyellow;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.c5 {
+  background-color: orange;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.d5 {
+  background-color: red;
+}
+
+.e5 {
+  background-color: hotpink;
+}
+.f5 {
+  background-color: purple;
+}
+.g5 {
+  background-color: brown;
+}
+.h5 {
+  background-color: gray;
+}

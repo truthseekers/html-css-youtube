@@ -1,0 +1,69 @@
+body {
+  background-color: yellowgreen;
+}
+
+.one {
+  background-color: orange;
+  height: 100px;
+}
+
+.two {
+  background-color: lightblue;
+  height: 100px;
+}
+
+.three {
+  background-color: lightgreen;
+  height: 100px;
+}
+
+.four {
+  background-color: hotpink;
+  height: 100px;
+}
+
+.five {
+  background-color: brown;
+  height: 100px;
+}
+.six {
+  background-color: darkturquoise;
+  height: 100px;
+}
+
+.lightgray {
+  background-color: lightgray;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-1-shorthand {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /* This makes the column grow at a pace of "1 unit" throughout the .row it's contained in. the row direction */
+  flex-grow: 1;
+  /* for some reason, basis and shrink settings are needed */
+  flex-basis: 0;
+  flex-shrink: 0;
+  /* equivalent to below: */
+  /* flex: 1; */
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}

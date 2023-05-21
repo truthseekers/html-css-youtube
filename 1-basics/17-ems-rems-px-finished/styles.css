@@ -1,0 +1,51 @@
+html {
+  /* font-size: 16px; */
+  font-size: 26px;
+}
+
+body {
+  font-size: 48px;
+}
+
+.outerdiv {
+  background-color: yellowgreen;
+  font-size: 16px;
+}
+
+.innerdiv {
+  background-color: hotpink;
+  font-size: 8px;
+}
+
+.inner2 {
+  background-color: orange;
+  font-size: 24px;
+}
+
+.px1 {
+  font-size: 18px;
+}
+
+.em1 {
+  font-size: 1em;
+}
+
+.em2 {
+  font-size: 1.5em;
+}
+
+.em3 {
+  font-size: 2.5em;
+}
+
+.rem1 {
+  font-size: 1rem;
+}
+
+.rem2 {
+  font-size: 1.5rem;
+}
+
+.rem3 {
+  font-size: 2.5rem;
+}

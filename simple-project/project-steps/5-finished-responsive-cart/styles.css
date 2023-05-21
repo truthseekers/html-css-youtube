@@ -1,0 +1,129 @@
+body {
+  background-color: yellowgreen;
+  margin: 0px;
+}
+
+.btn {
+  padding: 5px 25px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pill {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.outline {
+  border: 1px solid white;
+}
+
+.light-bg {
+  background-color: white;
+  color: black;
+}
+
+.primary {
+  background-color: #eb5757;
+}
+
+.dark-bg {
+  background-color: #333;
+}
+
+.light {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-gap-2 {
+  column-gap: 20px;
+}
+
+.p-25 {
+  padding: 25px;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+.content-container {
+  /* background-color: pink; */
+  width: 75%;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.nav-items {
+  list-style-type: none;
+}
+
+.nav-items li:hover {
+  background-color: #333;
+  color: white;
+}
+
+.nav-items li {
+  padding: 10px;
+  margin: 0px 20px;
+  border-radius: 5px;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(235deg)
+    brightness(104%) contrast(100%);
+}
+
+.icon-container {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 6px 15px;
+  position: relative;
+}
+
+.quantity {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-items {
+    display: none;
+  }
+
+  #cart {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}

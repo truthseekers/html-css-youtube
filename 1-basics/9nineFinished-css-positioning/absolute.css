@@ -1,0 +1,10 @@
+.nav {
+  background-color: yellowgreen;
+  /* padding: 40px; */
+  position: absolute;
+  top: 40px;
+}
+
+.relativepos {
+  position: relative;
+}

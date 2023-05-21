@@ -1,0 +1,32 @@
+body {
+  background-color: yellowgreen;
+}
+
+.one {
+  background-color: orange;
+  height: 100px;
+}
+
+.two {
+  background-color: lightblue;
+  height: 100px;
+}
+
+.three {
+  background-color: lightgreen;
+  height: 100px;
+}
+
+.four {
+  background-color: hotpink;
+  height: 100px;
+}
+
+.five {
+  background-color: brown;
+  height: 100px;
+}
+.six {
+  background-color: darkturquoise;
+  height: 100px;
+}

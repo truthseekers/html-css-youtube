@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  background-color: lightblue;
+  align-items: flex-start;
+}
+
+.item {
+  padding: 25px 0px;
+  width: 450px;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: yellowgreen;
+}
+
+.three {
+  background-color: hotpink;
+}
+
+.four {
+  background-color: purple;
+}
+
+.five {
+  background-color: orange;
+}
+
+.six {
+  background-color: chartreuse;
+}
+
+.seven {
+  background-color: darkred;
+}
+
+.eight {
+  background-color: indianred;
+}

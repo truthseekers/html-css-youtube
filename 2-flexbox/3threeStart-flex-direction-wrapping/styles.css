@@ -1,0 +1,40 @@
+.flex-container {
+  display: flex;
+  background-color: pink;
+}
+
+.flex-item {
+  /* width: 25%; */
+}
+
+.one {
+  background-color: crimson;
+}
+
+.two {
+  background-color: chartreuse;
+}
+
+.three {
+  background-color: chocolate;
+}
+
+.four {
+  background-color: cadetblue;
+}
+
+.five {
+  background-color: cyan;
+}
+.six {
+  background-color: yellowgreen;
+}
+.seven {
+  background-color: yellow;
+}
+.eight {
+  background-color: orangered;
+}
+.nine {
+  background-color: plum;
+}

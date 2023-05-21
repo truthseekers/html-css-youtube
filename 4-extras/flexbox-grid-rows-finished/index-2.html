@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles-2.css" type="text/css" />
+  </head>
+  <body>
+    <h2>Problem: How to get elements in a flex container on separate rows?</h2>
+
+    <div style="display: flex">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+      <div class="four">Four</div>
+    </div>
+
+    <h2>Example 0</h2>
+
+    <p>You can use flex-grow to fill the extra space</p>
+
+    <div class="row lightgray">
+      <div class="one row">One</div>
+      <div class="two grow-1">Two</div>
+      <div class="three grow-1-shorthand">Three</div>
+    </div>
+
+    <h2>Example 1</h2>
+    <div class="row">
+      <div class="column four">
+        <div class="one">
+          <p>Column One</p>
+          <p>Column Two</p>
+        </div>
+      </div>
+      <div class="column five">
+        <div class="two">Column Two</div>
+      </div>
+      <div class="column six">
+        <div class="three">Column Three</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="three row">
+          <div class="column four">rowception</div>
+          <div class="column five">rowception</div>
+          <div class="column six">rowception</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="one">Column Two</div>
+      </div>
+      <div class="column">
+        <div class="two">Column Three</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-2">
+        <div class="two">column 1</div>
+      </div>
+      <div class="column four">column 2</div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="four">column 1</div>
+      </div>
+      <div class="column-2 one">column 2</div>
+      <div class="column">
+        <div class="four">column 1</div>
+      </div>
+      <div class="column-2 one">column 2</div>
+    </div>
+  </body>
+</html>

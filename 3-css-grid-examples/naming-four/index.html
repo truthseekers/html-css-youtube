@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Grid 1: Naming</h1>
+      <p>
+        we can give each row and column in the grid a name that we can use in
+        positioning.
+      </p>
+      <div class="grid container">
+        <div class="a">item a</div>
+        <div class="b">item b</div>
+        <div class="c">item c</div>
+        <div class="d">item d</div>
+        <div class="e">item e</div>
+        <div class="f">item f</div>
+      </div>
+
+      <h1>Grid 2: Naming with Repeat</h1>
+      <p>
+        Using repeat() and names causes multiple rows/columns to have the same
+        name. You can use row-name # to get the first, second, etc... of that
+        named column/row
+      </p>
+      <div class="grid2 container">
+        <div class="a2">item a</div>
+        <div class="b2">item b</div>
+        <div class="c2">item c</div>
+        <div class="d2">item d</div>
+        <div class="e2">item e</div>
+        <div class="f2">item f</div>
+        <div class="g2">item g</div>
+        <div class="h2">item h</div>
+      </div>
+
+      <h1>Grid 3: Different ways to do the same thing</h1>
+      <p>
+        I don't like doing this naming thing. It doesn't feel like I have as
+        much control. For example, in order to get a grid item to stop at the
+        end of the 2nd "header", it seems like I have to name the other "header"
+        something else, like "header2". I may be doing it wrong, but so far I I
+        don't like to use the grid-template-areas to "name" my columns and rows.
+      </p>
+      <div class="grid3 container">
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+      </div>
+    </div>
+  </body>
+</html>

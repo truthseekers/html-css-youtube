@@ -1,0 +1,35 @@
+h1 {
+  color: red;
+}
+
+div {
+  width: 150px;
+}
+
+.hero-text {
+  color: purple;
+}
+
+.padding {
+  background-color: red;
+  padding: 20px 60px 120px 180px;
+}
+
+h1 {
+  color: yellowgreen;
+}
+
+.margin {
+  background-color: lightblue;
+  margin: 20px 60px 120px 180px;
+  border-width: 3px;
+  border-style: dotted;
+  border-color: black;
+}
+
+.border {
+  background-color: hotpink;
+  border: 5px solid green;
+  padding: 50px;
+  border-radius: 50px 5px 100px 20px;
+}

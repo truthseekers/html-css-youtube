@@ -1,0 +1,71 @@
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: cyan;
+}
+
+/* Descendant. child, grandchild, great grandchild, etc.. */
+.one p {
+  color: red;
+  font-weight: bold;
+}
+
+/* p tags that are descendents of .one, AND p tags that are descendants of .two */
+.one p,
+.two p {
+  color: purple;
+}
+
+.three {
+  background-color: pink;
+}
+
+.classA.classB {
+  background-color: black;
+  color: white;
+}
+
+span.classA.classB {
+  background-color: lightgreen;
+  color: purple;
+  font-size: 36px;
+}
+
+.four {
+  background-color: black;
+}
+
+/* p tags that are descendents of .four */
+.four p {
+  color: hotpink;
+}
+
+/* Direct child of .four element that is a p tag */
+.four > p {
+  color: lightgreen;
+}
+
+.five {
+  background-color: chartreuse;
+}
+
+/* Only applies to spans that are right after a p tag */
+p + span {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Only applies to spans that are right after (adjacent sibling) a p tag having the class of "step" */
+p.step + span {
+  color: red;
+}
+
+.six {
+  background-color: burlywood;
+}
+
+.six h2 ~ p {
+  color: red;
+}

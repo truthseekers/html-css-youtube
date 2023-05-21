@@ -1,0 +1,366 @@
+/* FIRST GRID */
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  row-gap: 5px;
+  column-gap: 5px;
+  /* Comment ALL align-items to have the grid items take up the whole space. */
+  align-items: center;
+  /* align-items: end; */
+  /* align-items: start; */
+}
+
+.a {
+  background-color: aqua;
+}
+
+.b {
+  background-color: greenyellow;
+}
+
+.c {
+  background-color: orange;
+}
+
+.d {
+  background-color: red;
+}
+
+.e {
+  background-color: hotpink;
+}
+.f {
+  background-color: purple;
+}
+.g {
+  background-color: brown;
+}
+.h {
+  background-color: gray;
+}
+
+/* SECOND GRID */
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-auto-rows: 200px;
+}
+
+.a2 {
+  background-color: aqua;
+  align-self: start;
+}
+
+.b2 {
+  background-color: greenyellow;
+}
+
+.c2 {
+  background-color: orange;
+  align-self: end;
+}
+
+.d2 {
+  background-color: red;
+  align-self: center;
+}
+
+.e2 {
+  background-color: hotpink;
+  align-self: end;
+}
+.f2 {
+  background-color: purple;
+  align-self: end;
+}
+.g2 {
+  background-color: brown;
+  align-self: start;
+}
+.h2 {
+  background-color: gray;
+}
+
+/* THIRD GRID */
+
+.grid3 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 200px;
+  row-gap: 5px;
+  column-gap: 5px;
+  /* Justify all items in the grid: */
+  /* justify-items: start; */
+}
+
+.a3 {
+  background-color: aqua;
+  justify-self: start;
+}
+
+.b3 {
+  background-color: greenyellow;
+  justify-self: end;
+}
+
+.c3 {
+  background-color: orange;
+  justify-self: center;
+}
+
+.d3 {
+  background-color: red;
+  justify-self: center;
+  align-self: center;
+}
+
+.e3 {
+  background-color: hotpink;
+  justify-self: center;
+  align-self: end;
+}
+.f3 {
+  background-color: purple;
+  align-self: start;
+  justify-self: start;
+}
+.g3 {
+  background-color: brown;
+  align-self: end;
+  justify-self: end;
+}
+.h3 {
+  background-color: gray;
+}
+
+/* FOURTH GRID */
+
+.grid4 > div {
+  padding: 20px;
+}
+
+.grid4 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  /* align-content: start; */
+  /* align-content: end; */
+  align-content: center;
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  justify-content: center;
+  /* justify-content: space-around; */
+  /* justify-content: start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+
+.a4 {
+  background-color: aqua;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.b4 {
+  background-color: greenyellow;
+  grid-row: span 2;
+}
+
+.c4 {
+  background-color: orange;
+}
+
+.d4 {
+  background-color: red;
+  grid-column: span 2;
+  /* any of the itmes can have an individualized setting */
+  /* align-self: start; */
+  /* justify-self: end; */
+}
+
+.e4 {
+  background-color: hotpink;
+}
+.f4 {
+  background-color: purple;
+}
+.g4 {
+  background-color: brown;
+}
+
+/* Fifth GRID */
+
+.grid5 > div {
+  padding: 20px;
+}
+
+.grid5 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-content: start;
+}
+
+.a5 {
+  background-color: aqua;
+  grid-area: 1 / 1 / 3 / 3;
+  margin-left: auto;
+}
+
+.b5 {
+  background-color: greenyellow;
+  grid-row: span 2;
+}
+
+.c5 {
+  background-color: orange;
+}
+
+.d5 {
+  background-color: red;
+  grid-column: span 2;
+  margin-right: auto;
+}
+
+.e5 {
+  background-color: hotpink;
+}
+.f5 {
+  background-color: purple;
+}
+.g5 {
+  background-color: brown;
+}
+
+/* Sixth GRID */
+
+.grid6 > div {
+  padding: 20px;
+}
+
+/* Variation 1 */
+/* .grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-items: start;
+  align-content: end;
+  justify-items: start;
+  justify-content: end;
+} */
+
+/* Variation 2 */
+/* .grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-items: end;
+  align-content: end;
+  justify-items: start;
+  justify-content: end;
+} */
+
+/* Variation 3 */
+/* .grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-items: start;
+  align-content: start;
+  justify-items: start;
+  justify-content: start;
+} */
+
+/* Variation 4. */
+/* .grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-items: end;
+  align-content: start;
+  justify-content: start;
+} */
+
+/* Variation 5 */
+/* .grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+  align-content: start;
+  justify-content: start;
+} */
+
+/* Variation 6 */
+.grid6 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  height: 750px;
+  width: 750px;
+}
+
+.a6 {
+  background-color: aqua;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.b6 {
+  background-color: greenyellow;
+  grid-row: span 2;
+}
+
+.c6 {
+  background-color: orange;
+}
+
+.d6 {
+  background-color: red;
+  grid-column: span 2;
+}
+
+.e6 {
+  background-color: hotpink;
+}
+.f6 {
+  background-color: purple;
+}
+.g6 {
+  background-color: brown;
+}

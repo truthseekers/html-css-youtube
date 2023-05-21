@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="ex0">
+      <p>
+        Problem 1. Top paragraph tag margin collapses because there is no
+        content separating the parent (ex0) and the first element inside it.
+      </p>
+      <p>The margins between p tags are collapsed (adjacent siblings)</p>
+      <p>bla.</p>
+      <p style="margin: 150px 50px">
+        larger of the two margins is used when there's two competing margins
+      </p>
+      <p>bla.</p>
+    </div>
+    <div class="ex1">
+      <p>
+        Top P. Fixed by adding padding of 1px. that pixel is "content" that
+        separates the parent from the first element, thus no collapsing.
+      </p>
+      <p style="padding: 1px">
+        padding doesn't help with the adjacent element collapse though
+      </p>
+      <p>bla.</p>
+      <p style="padding: 1px">bla.</p>
+      <p>bla.</p>
+    </div>
+
+    <div class="ex2">
+      <p>I am partially solved by overflow being set to auto.</p>
+      <p>
+        See overflow page:
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+          target="_blank"
+          >https://developer.mozilla.org/en-US/docs/Web/CSS/overflow</a
+        >
+      </p>
+      <p>bla.</p>
+      <p>bla.</p>
+      <p>bla.</p>
+    </div>
+
+    <div style="background-color: orange; padding: 15px 0px">
+      <p style="margin: 24px">Solutions:</p>
+      <ul class="solution-list">
+        <li class="solution-item">Use flexbox and grid</li>
+        <li class="solution-item">
+          accept the collapse and just use margin of one of the elements to
+          space them properly.
+        </li>
+        <li class="solution-item">
+          use margin-bottom or margin-top only so two margins aren't touching
+        </li>
+        <li class="solution-item">
+          restructure the app. It's easier to think about when you have a target
+          layout.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

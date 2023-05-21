@@ -1,0 +1,46 @@
+.flex-container {
+  display: flex;
+  background-color: lightblue;
+  align-content: flex-start;
+  height: 800px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.item {
+  padding: 25px 0px;
+  width: 25%;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: yellowgreen;
+}
+
+.three {
+  background-color: hotpink;
+}
+
+.four {
+  background-color: purple;
+}
+
+.five {
+  background-color: orange;
+}
+
+.six {
+  background-color: chartreuse;
+}
+
+.seven {
+  background-color: darkred;
+}
+
+.eight {
+  background-color: indianred;
+}

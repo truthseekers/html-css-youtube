@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Grid 1: default alignment stretch & align-items</h1>
+      <p>
+        Notice how the grid items STRETCH to cover the full height of the grid
+        by default. Set align-items to end, start, center, etc. to see all the
+        space in the grid area.
+      </p>
+      <div class="grid container">
+        <div class="a">item a</div>
+        <div class="b">item b</div>
+        <div class="c">item c</div>
+        <div class="d">item d</div>
+        <div class="e">item e</div>
+        <div class="f">item f</div>
+        <div class="g">item g</div>
+        <div class="h">item h</div>
+      </div>
+
+      <h1>Grid 2: align-self</h1>
+
+      <p>Alignment of the "block axis" (up and down)</p>
+      <div class="grid2 container">
+        <div class="a2">item a</div>
+        <div class="b2">item b</div>
+        <div class="c2">item c</div>
+        <div class="d2">item d</div>
+        <div class="e2">item e</div>
+        <div class="f2">item f</div>
+        <div class="g2">item g</div>
+        <div class="h2">item h</div>
+      </div>
+
+      <h1>Grid 3: align & justify</h1>
+      <p>align-self, justify-self, justify-items</p>
+      <div class="grid3 container">
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+      </div>
+
+      <h1>Grid 4: Variety of spacing options</h1>
+      <div class="grid4 container">
+        <div class="a4">item a</div>
+        <div class="b4">item b</div>
+        <div class="c4">item c</div>
+        <div class="d4">item d</div>
+        <div class="e4">item e</div>
+        <div class="f4">item f</div>
+        <div class="g4">item g</div>
+      </div>
+
+      <h1>Grid 5: auto margin</h1>
+      <p>
+        It seems the auto-margin takes the place of the actual element to fill
+        up all the unused space with margin. What would otherwise be stretched
+        turns into margin. See margin values of item "a" and "d"
+      </p>
+      <p>
+        Also, un-commenting e, f, and g, they will stretch to fill the space,
+        unless the grid is given an align-content value.
+      </p>
+      <div class="grid5 container">
+        <div class="a5">item a</div>
+        <div class="b5">item b</div>
+        <div class="c5">item c</div>
+        <div class="d5">item d</div>
+        <div class="e5">item e</div>
+        <div class="f5">item f</div>
+        <div class="g5">item g</div>
+      </div>
+
+      <h1>Grid 6: align/justify-items vs align/justify-content</h1>
+      <p>
+        aligning or justifying "content" moves the whole box across the grid.
+      </p>
+      <p>
+        aligning or justifying "items" moves the items inside the box that is in
+        the grid.
+      </p>
+      <p>
+        For example, we can move the entire box of content to the bottom left of
+        the grid. then when all the items are in the bottom left, we can align
+        the ITEMS to either the top or the bottom, or center OF that confined
+        area.
+      </p>
+      <div class="grid6 container">
+        <div class="a6">item a</div>
+        <div class="b6">item b</div>
+        <div class="c6">item c</div>
+        <div class="d6">item d</div>
+        <div class="e6">item e</div>
+        <div class="f6">item f</div>
+        <div class="g6">item g</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+/* change from red to yellow */
+@keyframes example {
+  /* from = 0% */
+  from {
+    background-color: red;
+  }
+
+  /* to = 100% */
+  to {
+    background-color: yellow;
+  }
+}
+
+/* Run the "example" animation over the course of 4 seconds. keep the final frame afterwards */
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; none; backwards; both */
+}
+
+/* change through 4 different colors */
+@keyframes example2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* run example2 on this div (change 4 colors */
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+
+@keyframes example3 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.div3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example3;
+  animation-duration: 4s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+/* Rotate the button on hover */
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* shorthand */
+button {
+  animation: rotate360 1.2s linear infinite;
+  animation-play-state: paused;
+}
+
+button:hover {
+  animation-play-state: running;
+}
+
+/* move the div and rotate on hover  */
+@keyframes moveonhover {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+    transform: rotate(360deg);
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+    transform: rotate(720deg);
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.div4 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: deepskyblue;
+  animation-name: moveonhover;
+  animation-duration: 4s;
+  animation-play-state: paused;
+}
+
+.div4:hover {
+  animation-play-state: running;
+}
+
+.div5 {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+}
+
+.div5:hover {
+  translate: 12px 50%;
+}
+
+.div6 {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s ease-in-out;
+}
+
+.div6:hover {
+  translate: 12px 50%;
+}

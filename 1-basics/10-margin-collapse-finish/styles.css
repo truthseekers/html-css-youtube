@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+}
+
+.ex0 {
+  background-color: pink;
+}
+
+.ex0 p {
+  margin: 50px;
+}
+
+.ex1 {
+  background-color: deeppink;
+  padding: 1px;
+}
+
+.ex1 p {
+  margin: 50px;
+  padding: 1px;
+}
+
+.ex2 {
+  background-color: lightblue;
+  overflow: auto;
+}
+
+.ex2 p {
+  margin: 50px;
+}
+
+.solution-list {
+  background-color: deeppink;
+  padding: 25px 80px;
+}
+
+.solution-item {
+  background-color: lightblue;
+  padding: 15px;
+  width: 50%;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}

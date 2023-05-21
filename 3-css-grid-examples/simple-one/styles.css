@@ -1,0 +1,61 @@
+.one {
+  background-color: aqua;
+}
+
+.two {
+  background-color: greenyellow;
+}
+
+.three {
+  background-color: orange;
+}
+
+.four {
+  background-color: red;
+}
+
+.five {
+  background-color: hotpink;
+}
+.six {
+  background-color: purple;
+}
+.seven {
+  background-color: brown;
+}
+.eight {
+  background-color: gray;
+}
+
+.grid {
+  background-color: lightgray;
+  display: grid;
+  /* Below is min and max size of rows */
+}
+
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 100px 150px;
+  /* grid-template-columns: 90px 50px 120px; */
+  /* grid-template-columns: 3rem 25% 1fr 2fr; */
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid3 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 30px repeat(3, 1fr) 30px */
+  grid-template-columns: repeat(2, 30%);
+}
+
+.grid4 {
+  display: grid;
+  background-color: lightgray;
+  row-gap: 20px;
+  column-gap: 25px;
+  grid-template-rows: 100px 150px;
+  grid-template-columns: 3rem 25% 1fr 2fr;
+}

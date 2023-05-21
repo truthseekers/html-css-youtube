@@ -1,0 +1,150 @@
+/* FIRST GRID */
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: [row-one-start] 150px [row-two-start] 150px [row-three-start] 150px [row-four-start] 150px [row-four-end];
+  grid-template-columns: [col-one-start] 250px [col-two-start] 150px [col-three-start] 75px [col-three-end];
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a {
+  background-color: aqua;
+}
+
+.b {
+  background-color: greenyellow;
+  grid-row-start: row-one-start;
+  grid-row-end: row-three-start;
+}
+
+.c {
+  background-color: orange;
+  grid-row-start: row-two-start;
+  grid-row-end: row-four-end;
+  grid-column-start: col-two-start;
+  grid-column-end: col-three-start;
+}
+
+.d {
+  background-color: red;
+}
+
+.e {
+  background-color: hotpink;
+}
+.f {
+  background-color: purple;
+}
+.g {
+  background-color: brown;
+}
+.h {
+  background-color: gray;
+}
+
+/* SECOND GRID */
+.grid2 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: repeat(3, [row-start] 75px [row-end]);
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.a2 {
+  background-color: aqua;
+}
+
+.b2 {
+  background-color: greenyellow;
+  grid-row: row-start 2 / row-end 3;
+  grid-column: col-start 2;
+}
+
+.c2 {
+  background-color: orange;
+}
+
+.d2 {
+  background-color: red;
+}
+
+.e2 {
+  background-color: hotpink;
+}
+.f2 {
+  background-color: purple;
+}
+.g2 {
+  background-color: brown;
+}
+.h2 {
+  background-color: gray;
+}
+
+/* THIRD GRID */
+
+.grid3 {
+  background-color: lightgray;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-areas:
+    "header header header sidebar"
+    "content content content sidebar"
+    "footer footer footer sidebar";
+  grid-template-rows: 150px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* alternative 1 */
+/* .a3 {
+  background-color: yellow;
+  grid-row-start: header;
+  grid-row-end: header;
+  grid-column-start: header;
+  grid-column-end: header;
+} */
+
+/* Alternative 2 */
+/* .a3 {
+  background-color: rgba(0, 255, 255, 0.5);
+  grid-area: header;
+} */
+
+/* Alternative 3 */
+/* .a3 {
+  background-color: brown;
+  grid-column-start: header-start;
+  grid-column-end: header-end;
+} */
+
+/* Alternative 4 */
+.a3 {
+  background-color: coral;
+  grid-column-start: header-start;
+  grid-column-end: sidebar-start;
+}
+
+.b3 {
+  background-color: greenyellow;
+  grid-area: content;
+}
+
+.c3 {
+  background-color: rgba(255, 165, 0, 0.5);
+  grid-area: sidebar;
+}
+
+.d3 {
+  background-color: rgba(255, 0, 0, 0.5);
+  grid-area: footer;
+}
+
+.e3 {
+  background-color: rgba(255, 105, 180, 0.5);
+}
+.f3 {
+  background-color: rgba(160, 32, 240, 0.5);
+}

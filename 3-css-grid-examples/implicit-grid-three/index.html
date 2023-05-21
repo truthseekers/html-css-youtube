@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Grid 1. Implicit Grid & Auto rows</h1>
+      <p>
+        We only have the first two rows defined, so what happens when there's
+        more elements than what can fit in the defined rows? They take up the
+        space they need by default.
+      </p>
+      <p>
+        Using "grid-auto-rows" will make the implicit rows a certain height.
+      </p>
+      <div class="grid container">
+        <div class="a">item a</div>
+        <div class="b">item b</div>
+        <div class="c">item c</div>
+        <div class="d">item d</div>
+        <div class="e">
+          <p>I take up the space I need.</p>
+          <p>item e</p>
+          <p>item e</p>
+          <p>item e</p>
+        </div>
+        <div class="f">item f</div>
+        <div class="g">item g</div>
+        <div class="h">item h</div>
+      </div>
+
+      <h1>Grid 2</h1>
+
+      <h3>Grid Auto Flow Column intro</h3>
+
+      <div class="grid2 container">
+        <div class="a2">item a</div>
+        <div class="b2">item b</div>
+        <div class="c2">item c</div>
+        <div class="d2">item d</div>
+        <div class="e2">item e</div>
+        <div class="f2">item f</div>
+        <div class="g2">item g</div>
+        <div class="h2">item h</div>
+        <div class="a2">item a</div>
+        <div class="b2">item b</div>
+        <div class="c2">item c</div>
+        <div class="d2">item d</div>
+        <div class="e2">item e</div>
+        <div class="f2">item f</div>
+        <div class="g2">item g</div>
+        <div class="h2">item h</div>
+      </div>
+
+      <h1>Grid 3</h1>
+
+      <p>
+        setting grid-auto-flow: column; will squish tons of elements all into
+        the # of rows given and stretch the page horizontally. Try uncommenting
+        some or all of the commented elements in the container.
+      </p>
+
+      <div class="grid3 container">
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <!-- Uncomment these: -->
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <!-- Now uncomment all of these and we'll get a horizontal stretch: -->
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+        <div class="a3">item a</div>
+        <div class="b3">item b</div>
+        <div class="c3">item c</div>
+        <div class="d3">item d</div>
+        <div class="e3">item e</div>
+        <div class="f3">item f</div>
+        <div class="g3">item g</div>
+        <div class="h3">item h</div>
+      </div>
+    </div>
+  </body>
+</html>

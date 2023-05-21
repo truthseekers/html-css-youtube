@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <h2>Example 0</h2>
+    <p>
+      How do we get these elements on separate rows? this example we're playing
+      around with basis and grow, which is covered in another video
+    </p>
+    <div>
+      <div>Item one</div>
+      <div>Item two</div>
+      <div>Item three</div>
+    </div>
+
+    <h2>Example 1: break</h2>
+    <p>
+      Use a div with a class of "break", which we define as flex-basis: 100%,
+      (basis can be thought of as "default amount of space" + whatever else is
+      done to it)
+    </p>
+    <p>
+      Here, we're making an empty div with the class of 'break' with a default
+      of 100% space taken up with a height of 0. this creates a new "row"
+    </p>
+    <p>We allow "wrapping" on the container</p>
+
+    <div>
+      <div>I am an item</div>
+      <div></div>
+      <div>I am another item</div>
+    </div>
+    <h2>Example 2: break + grow</h2>
+    <p>
+      flex container with two items that grow at the same pace, and a break
+      which creates a new row.
+    </p>
+    <p>
+      The second div also uses flex-grow: 1, and since it's by itself, takes up
+      the whole row.
+    </p>
+    <div>
+      <div>I am an item</div>
+      <div>I am an item</div>
+      <div></div>
+      <div>I am another item</div>
+    </div>
+
+    <h2>Example 3: multiple rows</h2>
+    <p>
+      three items on the same row. another row with one item, then another row
+      with three items, all the same size
+    </p>
+    <div>
+      <div>I am an item</div>
+      <div>I am an item</div>
+      <div>I am another item</div>
+      <div></div>
+      <div>I am an item</div>
+      <div></div>
+      <div>I am an item</div>
+      <div>I am an item</div>
+      <div>I am another item</div>
+    </div>
+    <h2>Example 4: flex column</h2>
+    <p>
+      You can make "rows" in a flex-column too, but I believe you need to set a
+      height. Threw in an align-self: end just for funsies
+    </p>
+    <div>
+      <div>Item ONE</div>
+      <div>Item TWO</div>
+      <div>Item THREE</div>
+      <div></div>
+      <div>Item Two(2nd time)</div>
+      <div>Item one(2nd time)</div>
+      <div></div>
+      <div>Item Two(2nd time)</div>
+      <div>Item ONE</div>
+      <div></div>
+      <div>Item TWO</div>
+      <div>Item THREE</div>
+      <div>Item one(2nd time)</div>
+    </div>
+  </body>
+</html>

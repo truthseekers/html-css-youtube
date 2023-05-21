@@ -1,0 +1,31 @@
+.one {
+  background-color: aqua;
+  padding: 50px;
+  display: block;
+}
+
+.two {
+  background-color: chartreuse;
+  width: 40%;
+  padding: 50px;
+  display: inline-block;
+}
+
+.three {
+  background-color: violet;
+  width: 40%;
+  padding: 50px;
+  display: inline-block;
+}
+
+.four {
+  display: inline;
+  width: 50%;
+  background-color: crimson;
+}
+
+/* This is a confusing name, sorry. code "block" does not mean the display type is 'block'. The display type of spans are "inline" by default.
+So this .inline-code-block, because it's on a span, is an "inline" display type */
+.inline-code-block {
+  background-color: lightblue;
+}

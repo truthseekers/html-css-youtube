@@ -1,0 +1,6 @@
+/* If there's a way to make images work, I can't figure it out. SVGs are much easier to use in these scenarios. */
+/* content: url("./popup-link-icon.png"); */
+
+li {
+  list-style-type: none;
+}

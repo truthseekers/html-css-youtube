@@ -1,0 +1,8 @@
+<!--
+  https://stackoverflow.com/questions/1126338/what-does-a-space-mean-in-a-css-selector-i-e-what-is-the-difference-between-c
+
+  https://stackoverflow.com/questions/21708823/periods-in-css-selectors
+
+  https://www.w3.org/TR/CSS2/selector.html#attribute-selectors
+
+ -->

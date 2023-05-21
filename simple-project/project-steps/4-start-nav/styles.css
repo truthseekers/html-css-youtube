@@ -1,0 +1,59 @@
+body {
+  background-color: yellowgreen;
+  margin: 0px;
+}
+
+.btn {
+  padding: 5px 25px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pill {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.outline {
+  border: 1px solid white;
+}
+
+.light-bg {
+  background-color: white;
+  color: black;
+}
+
+.primary {
+  background-color: #eb5757;
+}
+
+.dark-bg {
+  background-color: #333;
+}
+
+.light {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-gap-2 {
+  column-gap: 20px;
+}
+
+.p-25 {
+  padding: 25px;
+}

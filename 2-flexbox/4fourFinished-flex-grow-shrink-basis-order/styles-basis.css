@@ -1,0 +1,16 @@
+.flex-container {
+  background-color: lightblue;
+  display: flex;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: lightcoral;
+}
+
+.three {
+  background-color: chartreuse;
+}

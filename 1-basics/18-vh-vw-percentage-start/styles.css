@@ -1,0 +1,25 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.div1 {
+  background-color: chocolate;
+}
+
+.div2 {
+  background-color: greenyellow;
+}
+
+.div3 {
+  background-color: hotpink;
+}
+
+.div4 {
+  background-color: orangered;
+}
+
+.div5 {
+  background-color: yellow;
+}

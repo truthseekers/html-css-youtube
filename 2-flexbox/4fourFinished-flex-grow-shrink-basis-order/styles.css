@@ -1,0 +1,39 @@
+.flex-container {
+  background-color: lightblue;
+  display: flex;
+}
+
+.one {
+  background-color: yellow;
+  flex-grow: 1;
+  flex-basis: 50%;
+  order: 2;
+}
+
+.two {
+  background-color: lightcoral;
+  flex-grow: 4;
+  order: 3;
+}
+
+.three {
+  background-color: chartreuse;
+  flex-grow: 2;
+  order: 1;
+}
+
+.shrink-flex {
+  display: flex;
+}
+
+.shrink-one {
+  width: 100%;
+  background-color: pink;
+  flex-shrink: 1;
+}
+
+.shrink-two {
+  width: 100%;
+  background-color: orange;
+  flex-shrink: 4;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <h2>Example 0</h2>
+    <p>
+      How do we get these elements on separate rows? this example we're playing
+      around with basis and grow, which is covered in another video
+    </p>
+    <div class="flex-container">
+      <div class="item-1 basis-1">Item one</div>
+      <div class="item-2 grow-1">Item two</div>
+      <div class="item-3 grow-1">Item three</div>
+    </div>
+
+    <h2>Example 1: break</h2>
+    <p>
+      Use a div with a class of "break", which we define as flex-basis: 100%,
+      (basis can be thought of as "default amount of space" + whatever else is
+      done to it)
+    </p>
+    <p>
+      Here, we're making an empty div with the class of 'break' with a default
+      of 100% space taken up with a height of 0. this creates a new "row"
+    </p>
+    <p>We allow "wrapping" on the container</p>
+
+    <div class="flex-container">
+      <div class="item-1">I am an item</div>
+      <div class="break"></div>
+      <div class="item-2">I am another item</div>
+    </div>
+    <h2>Example 2: break + grow</h2>
+    <p>
+      flex container with two items that grow at the same pace, and a break
+      which creates a new row.
+    </p>
+    <p>
+      The second div also uses flex-grow: 1, and since it's by itself, takes up
+      the whole row.
+    </p>
+    <div class="flex-container">
+      <div class="grow-1 item-1">I am an item</div>
+      <div class="grow-1 item-2">I am an item</div>
+      <div class="break"></div>
+      <div class="grow-1 item-3">I am another item</div>
+    </div>
+
+    <h2>Example 3: multiple rows</h2>
+    <p>
+      three items on the same row. another row with one item, then another row
+      with three items, all the same size
+    </p>
+    <div class="flex-container">
+      <div class="grow-1 item-1">I am an item</div>
+      <div class="grow-1 item-2">I am an item</div>
+      <div class="grow-1 item-3">I am another item</div>
+      <div class="break"></div>
+      <div class="grow-1 item-4">I am an item</div>
+      <div class="break"></div>
+      <div class="grow-1 item-1 flex-container">
+        <div class="item-2 grow-1">item 2</div>
+        <div class="red grow-3">item 1</div>
+        <div class="break"></div>
+        <div class="red">item 1</div>
+        <div class="item-3 grow-1">item 3</div>
+      </div>
+      <div class="grow-1 item-2">I am an item</div>
+      <div class="grow-1 item-3">I am another item</div>
+    </div>
+    <h2>Example 4: flex column</h2>
+    <p>
+      You can make "rows" in a flex-column too, but I believe you need to set a
+      height. Threw in an align-self: end just for funsies
+    </p>
+    <div class="flex-column">
+      <div class="item-1 grow-3 align-self-end">Item ONE</div>
+      <div class="item-2 grow-1">Item TWO</div>
+      <div class="item-3">Item THREE</div>
+      <div class="break-column"></div>
+      <div class="item-2">Item Two(2nd time)</div>
+      <div class="item-1">Item one(2nd time)</div>
+      <div class="break-column"></div>
+      <div class="item-2">Item Two(2nd time)</div>
+      <div class="item-1">Item ONE</div>
+      <div class="break-column"></div>
+      <div class="item-2">Item TWO</div>
+      <div class="item-3">Item THREE</div>
+      <div class="item-1">Item one(2nd time)</div>
+    </div>
+
+    <h2>Example 4 and a half: Ignore this one</h2>
+    <p>
+      Just screwing around with the row gaps. I was trying to stretch the items
+      to have more control of the space between rows.
+    </p>
+    <p>
+      Unless I've completely forgotten something basic, I think it's just a lot
+      easier to implement proper usage of the grid to have more fine-grain
+      control. Flexbox + Grid = nirvana
+    </p>
+    <div class="flex-container-2">
+      <div class="item-1 grow-3 align-self-end">Item ONE</div>
+      <div class="item-2 grow-1">Item TWO</div>
+      <div class="item-3">Item THREE</div>
+      <div class="break"></div>
+      <div class="item-2">Item Two(2nd time)</div>
+      <div class="item-1">Item one(2nd time)</div>
+      <div class="break"></div>
+      <div class="item-2">Item Two(2nd time)</div>
+      <div class="item-1">Item ONE</div>
+      <div class="break"></div>
+      <div class="item-2 height-200">Item TWO</div>
+      <div class="item-3">Item THREE</div>
+      <div class="item-1">Item one(2nd time)</div>
+    </div>
+  </body>
+</html>

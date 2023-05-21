@@ -1,0 +1,66 @@
+body {
+  margin: 0px;
+}
+
+.outer {
+  background-color: yellowgreen;
+  /* Comment the padding line below AND the "outer" p tag to see the margin of the "one" Div "stick out" of the outer class */
+  /* Either the .outer padding OR the p tag in the .outer will cause .one's margin to be within .outer */
+  padding: 1px;
+}
+
+.one {
+  background-color: lightblue;
+  padding: 50px;
+  margin: 25px;
+}
+
+.two {
+  background-color: lightcoral;
+  width: 50%;
+  margin-top: -35px;
+}
+
+.three {
+  background-color: crimson;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: -37px;
+}
+
+.four {
+  background-color: darkmagenta;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.five {
+  background-color: crimson;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.six {
+  background-color: darkmagenta;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: -25px;
+}
+
+.seven {
+  background-color: crimson;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.eight {
+  background-color: darkmagenta;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 75px;
+}

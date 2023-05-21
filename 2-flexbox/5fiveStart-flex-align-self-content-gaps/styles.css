@@ -1,0 +1,24 @@
+.flex-container {
+  display: flex;
+  background-color: lightblue;
+}
+
+.item {
+  padding: 25px;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: yellowgreen;
+}
+
+.three {
+  background-color: hotpink;
+}
+
+.four {
+  background-color: purple;
+}

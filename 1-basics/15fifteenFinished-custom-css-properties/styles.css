@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: lightgrey;
+  --my-font-color: red;
+  --main-color: lightblue;
+}
+
+p {
+  color: var(--my-font-color);
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+/* overwrites the variables exisitng color defined in :root */
+.hero {
+  --main-bg-color: hotpink;
+  --my-font-color: green;
+  background-color: var(--main-bg-color);
+  padding: 50px;
+}
+
+.inner-hero {
+  --my-font-color: yellow;
+  --main-bg-color: black;
+  padding: 50px;
+}
+
+.inner-hero div {
+  background-color: var(--main-bg-color);
+}
+
+.inner-hero div p {
+  color: var(--main-color);
+}

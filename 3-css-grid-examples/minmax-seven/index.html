@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Grid 1: minmax Pt. 1</h1>
+      <p>
+        First column is minmax(50px, 100px) meaning 50px is the smallest it can
+        get, and the largest it can get is 100px.
+      </p>
+      <p>
+        Second column is minmax(50px, 100px). The largest this column can get is
+        100px, forcing the content downards.
+      </p>
+      <p>
+        The grid item is also constrained vertically because the rows are set to
+        100px tall. try commenting out the <b>grid-auto-rows: 100px;</b> to see
+        that without specifying row height, the content will stay in the
+        container.
+      </p>
+      <p>
+        C demonstrates that the minmax() will be using the max by default... I
+        think lol
+      </p>
+
+      <div class="grid container">
+        <div class="a">a</div>
+        <div class="b">
+          item b one two three four five six seven eight nine ten eleven twelve
+          thirteen fourteen fifteen sixteen seventeen
+        </div>
+        <div class="c">C... Max by default?.</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+        <div class="f">f</div>
+        <div class="g">g</div>
+      </div>
+
+      <h1>Grid 2: minmax Pt. 2</h1>
+      <p>
+        Columns still have MIN's of 50px, 50px, 25px, but they're still using
+        their max. If we justify-items, the elements will look too small.
+      </p>
+      <p>
+        But we're actually looking at the elements inside the columns. The
+        columns themselves actually are still within the minmax range (using the
+        max).
+      </p>
+      <p>
+        Inspect and click grid, and you can see they're still the proper size.
+        But the column has unused space now
+      </p>
+      <p>We can use justify to move the content around within the columns.</p>
+
+      <p>the "e" area demonstrates using flexbox within a grid.</p>
+
+      <div class="grid2 container">
+        <div class="a2">a</div>
+        <div class="b2">
+          item b one two three four five six seven eight nine ten eleven twelve
+          thirteen fourteen fifteen sixteen seventeen
+        </div>
+        <div class="c2">C... Max by default?.</div>
+        <div class="d2">d</div>
+        <div class="e2">
+          <div class="innere2">
+            <span>e</span>
+            <span>e</span>
+            <span>e</span>
+          </div>
+        </div>
+        <div class="f2">f</div>
+        <div class="g2">g</div>
+      </div>
+
+      <h1>Grid 3: minmax Minimums</h1>
+      <p>
+        Copy paste more items into the grid to fill it up. When the items fill
+        up the full 800px of height of the grid, they'll start shrinking towards
+        the minimum.
+      </p>
+
+      <p>Shrink the page to see the minimum of the columns take effect.</p>
+      <div class="grid3 container">
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <!-- <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div>
+        <div class="a3">a</div>
+        <div class="b3">b</div>
+        <div class="c3">C</div>
+        <div class="d3">d</div>
+        <div class="e3">e</div>
+        <div class="f3">f</div>
+        <div class="g3">g</div>
+        <div class="h3">h</div> -->
+      </div>
+    </div>
+  </body>
+</html>

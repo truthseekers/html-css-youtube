@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    Hello world
+    <div class="outerdiv">
+      <p class="px1">PX pixels are always the same</p>
+      <p class="em1">
+        I am an "em". so I am sized relative to my parent element's font size.
+        .em1 is 1x the size of .outerdiv's 16px. (When not commented)
+      </p>
+      <p class="em2">
+        I am an "em". .em2 is 1.5x the size of .outerdiv's 16px.
+      </p>
+      <p class="em3">
+        I am an em. .em3 = 2.5x .outerdiv's 16px. Comment out .outerdiv's
+        font-size and we'll use the next parent up, which is "body"'s 48px.
+      </p>
+      <p class="rem1">
+        div REM 1. REMs are relative to the HTML tag's font-size
+      </p>
+      <p class="rem2">
+        div REM 2. It doesn't matter how many divs we're in or what our parents
+        are doing.
+      </p>
+      <p class="rem3">div REM 3. We only care about the HTML tag's font-size</p>
+      <div class="innerdiv">
+        <p class="px1">PX pixels are always the same</p>
+        <p class="em1">div em</p>
+        <p class="em2">div em 2</p>
+        <p class="em3">div em 3</p>
+        <p class="rem1">div REM 1</p>
+        <p class="rem2">div REM 2</p>
+        <p class="rem3">div REM 3</p>
+        <div class="inner2">
+          <p class="px1">PX pixels are always the same</p>
+          <p class="em1">
+            Ems in inner2 will first look at .inner2's font-size. Nothing? Then
+            .innerdiv, then .outerdiv, etc..
+          </p>
+          <p class="em2">div em 2</p>
+          <p class="em3">div em 3</p>
+          <p class="rem1">div REM 1</p>
+          <p class="rem2">div REM 2</p>
+          <p class="rem3">div REM 3</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

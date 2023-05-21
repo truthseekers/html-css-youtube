@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fancy App</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="outer">
+      <!-- <p>Outer</p> -->
+      <div class="one">
+        This div has margin of 25. Its margin sticks out of the parent div
+        because there's nothing separating this margin from the end of the
+        parent. We'd need to add padding to the outer class to get the margin to
+        be within the "outer" div, OR have content in between, which we do, the
+        p tag. Note: You CANNOT get the "margin" of the "one" class to be inside
+        the one class. because margin separates elements.
+      </div>
+    </div>
+    <div class="two">
+      this div has a margin-top of -35px, allowing for elements to overlap.
+      Negative margin keeps the element and its content in place, but allows
+      space for another element. Because we have -35px margin-top, this div
+      moves upward 35px.
+    </div>
+    <div style="padding: 50px; border-bottom: 1px solid black">
+      Spacer to start the next example
+    </div>
+    <div class="three">
+      this div has a negative bottom margin, allowing 37px of space at the
+      bottom for another element
+    </div>
+    <div class="four">Just another div</div>
+    <div style="padding: 50px; border-bottom: 1px solid black">
+      Spacer to start the next example
+    </div>
+    <div class="five">Another div</div>
+    <div class="six">
+      the -25 margin is ignored, because it's "collapsed". Only the larger of
+      the negative margins is used.
+    </div>
+    <div style="padding: 50px; border-bottom: 1px solid black">
+      Spacer to start the next example
+    </div>
+    <div class="seven">
+      in this case, the negative and positive margins are added together to
+      create a total. so -50 + 75 = 25px of margin.
+    </div>
+    <div class="eight">Another div</div>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations -->
